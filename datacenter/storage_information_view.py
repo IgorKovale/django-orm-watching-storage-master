@@ -7,7 +7,7 @@ import django
 
 def storage_information_view(request):
     visits = Visit.objects.filter(leaved_at=None)
-    non_closed_visits=[]
+    non_closed_visits = []
     for visit in visits:
         non_closed_visit = {
                 'who_entered': visit.passcard.owner_name,
