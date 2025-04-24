@@ -37,7 +37,8 @@ Pipfile.lock
 
 # poetry
 poetry.lock
-
+pyproject.toml
+.replit
 # mypy
 .mypy_cache/
 .dmypy.json
