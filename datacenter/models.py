@@ -1,5 +1,5 @@
 from django.db import models
-import django
+
 
 class Passcard(models.Model):
     is_active = models.BooleanField(default=False)
