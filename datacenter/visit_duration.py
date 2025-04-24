@@ -4,7 +4,7 @@ from datacenter.models import Visit
 def get_duration(visit):
     time_now = django.utils.timezone.localtime()
     enter_localtime = django.utils.timezone.localtime(visit.entered_at)
-    if visit.leaved_at is None:
+    if not visit.leaved_at:
         duration = time_now-enter_localtime
     else:
         leaved_localtime=django.utils.timezone.localtime(visit.leaved_at)
